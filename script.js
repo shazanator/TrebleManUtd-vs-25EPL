@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     async function fetchPremierLeagueTeams() {
         try {
             const response = await fetch("https://api.football-data.org/v4/competitions/PL/teams", {
-                headers: { "X-Auth-Token": "YOUR_API_KEY" }
+                headers: { "X-Auth-Token": "f1e8472d1e564566bc649c6e404fdd6c" }
             });
             const data = await response.json();
             teamSelect.innerHTML = "";
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         try {
             const response = await fetch(`https://api.football-data.org/v4/teams/${selectedTeamId}`, {
-                headers: { "X-Auth-Token": "YOUR_API_KEY" }
+                headers: { "X-Auth-Token": "f1e8472d1e564566bc649c6e404fdd6c" }
             });
             const teamData = await response.json();
 
