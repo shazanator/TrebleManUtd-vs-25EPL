@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", async function () {
+    console.log("DOM fully loaded and parsed"); // Check if this message appears in the console
+    
     const teamSelect = document.getElementById("team-select");
     const simulateBtn = document.getElementById("simulate-btn");
     const matchResult = document.getElementById("match-result");
     const finalScore = document.getElementById("final-score");
     const goalScorersList = document.getElementById("goal-scorers");
     const cardEventsList = document.getElementById("card-events");
+
+    console.log("Elements selected:", { teamSelect, simulateBtn, matchResult, finalScore, goalScorersList, cardEventsList });
+    
 
     const united98_99 = {
         name: "Manchester United 98/99",
